@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Survey</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="resources/images/nintendologo.png" alt="nintendo logo" height="100"></a>
+        <nav>
+            <ul>
+                <li><a href="consoles.html">Consoles</a></li>
+                <li><a href="games.html">Games</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <form action="results.html" class="centered-form">
+        <p>
+            <label for="firstname">First Name: </label>
+            <input type="text" name="firstname" id="firstname">
+        </p>
+        <p>
+            <label for="lastname">Last Name: </label>
+            <input type="text" name="lastname" id="lastname">
+        </p>
+        <p>
+            <label for="email">E-mail: </label>
+            <input type="text" name="email" id="email">
+        </p>
+        <p>
+            <label for="which-consoles-you-have">Which consoles do you own?</label>
+            <select name="which-consoles-you-have" id="which-consoles-you-have" multiple>
+                <option value="NES">NES</option>
+                <option value="SNES">SNES</option>
+                <option value="N64">Nintendo64</option>
+                <option value="gamecube">Gamecube</option>
+                <option value="wii">Wii</option>
+                <option value="wiiU">WiiU</option>
+                <option value="switch">Switch</option>
+            </select>
+        </p>
+        <p>
+            <label for="comments">Extra Comments:</label>
+            <textarea name="comments" id="comments" rows="4" cols="40"></textarea>
+        </p>
+        <div class="radio-buttons">
+            <label>Would you like to recieve regular updates on games?</label>
+            <input type="radio" name="join-newsletter" value="Yes" checked>Yes
+            <input type="radio" name="join-newsletter" value="No">No
+        </div>
+        <div class="checkbox-group">
+            <label>Which consoles do you still regularly use?</label>
+            <p class="checkbox-item"><input type="checkbox" name="consoles" value="NES">NES</p>
+            <p class="checkbox-item"><input type="checkbox" name="consoles" value="SNES">SNES</p>
+            <p class="checkbox-item"><input type="checkbox" name="consoles" value="N64">N64</p>
+            <p class="checkbox-item"><input type="checkbox" name="consoles" value="gamecube">Gamecube</p>
+            <p class="checkbox-item"><input type="checkbox" name="consoles" value="Wii">Wii</p>
+            <p class="checkbox-item"><input type="checkbox" name="consoles" value="WiiU">WiiU</p>
+            <p class="checkbox-item"><input type="checkbox" name="consoles" value="Switch">Switch</p>
+        </div>
+        <p>
+            <label></label>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+
+</html>
