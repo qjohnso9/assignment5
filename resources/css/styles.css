@@ -1,9 +1,7 @@
 body {
-    color: darkslategray;
+    color: white;
     font-family: "Helvetica";
-    font-size: 15px;
-    
-}
+    font-size: 15px;}
 
 /*
 li {
@@ -125,4 +123,14 @@ form select {
 
 .centered-form {
     width: 80%;
+}
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../images/background.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
 }
